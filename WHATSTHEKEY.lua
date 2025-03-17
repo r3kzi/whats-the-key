@@ -13,8 +13,9 @@ function WhatsTheKey:OnEnable()
 end
 
 -- Event handler for LFG_LIST_JOINED_GROUP.
-function WhatsTheKey:OnJoinedGroup(event, ...)
+function WhatsTheKey:OnJoinedGroup(event, searchResultID, groupName)
     print(event)
-    print(...)
+    print(searchResultID)
+    print(groupName)
 end
 
