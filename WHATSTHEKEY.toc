@@ -1,0 +1,8 @@
+## Interface: 110100
+## X-Min-Interface: 110000
+## Title: What's the key?
+## Notes: LFG Keystone tracker
+## Author: Christian Niehoff
+## Version: 1.0.0
+embeds.xml
+WHATSTHEKEY.lua
