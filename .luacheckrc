@@ -6,6 +6,7 @@ exclude_files = {
 	"Libs/",
 	"*_test.lua",
 	".luacheckrc"
+	".luarocks/"
 }
 
 ignore = {
