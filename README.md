@@ -1,5 +1,7 @@
 # whats-the-key
 
+[![lua-ci](https://github.com/r3kzi/whats-the-key/actions/workflows/lua-ci.yml/badge.svg)](https://github.com/r3kzi/whats-the-key/actions/workflows/lua-ci.yml)
+
 A lightweight World of Warcraft addon that automatically prints your Mythic+ key level and the associated dungeon name 
 immediately after joining a group via the Looking For Group (LFG) system.
 
