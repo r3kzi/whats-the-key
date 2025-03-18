@@ -10,7 +10,6 @@ immediately after joining a group via the Looking For Group (LFG) system.
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Configuration](#configuration)
 - [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
