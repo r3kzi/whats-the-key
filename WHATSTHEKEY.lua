@@ -19,21 +19,22 @@ function WhatsTheKey:OnJoinedGroup(event, searchResultID, groupName)
     if searchResultID and searchResultID ~= "" then
         -- Retrieve additional information about the search result.
         -- https://warcraft.wiki.gg/wiki/API_C_LFGList.GetSearchResultInfo
-        local searchResultInfo = C_LFGList.GetSearchResultInfo(resultID)
+        local searchResultInfo = C_LFGList.GetSearchResultInfo(searchResultID)
 
         -- Check if the returned info exists and has a list of activityIDs.
         if searchResultInfo and searchResultInfo.activityIDs then
-            -- Loop through each activityID and print it.
+            -- Loop through each activityID
             for index, activityID in ipairs(searchResultInfo.activityIDs) do
                 -- Call GetActivityInfo with activityID
                 -- https://warcraft.wiki.gg/wiki/API_C_LFGList.GetActivityInfo
                 local activityInfo = C_LFGList.GetActivityInfo(activityID)
                 -- Check if the activity info indicates a Mythic Plus activity.
                 if activityInfo and activityInfo.isMythicPlusActivity then
-                    print("Mythic Plus Activity ID:", firstActivityID)
+                    print(activityInfo)
                 end
             end
         end
     end
 end
 
+return WhatsTheKey
