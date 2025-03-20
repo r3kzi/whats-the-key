@@ -37,9 +37,8 @@ describe("WhatsTheKey Addon", function()
             end,
         }
 
-        -- Clear any previous module cache and require your addon file.
+        -- Clear any previous module cache and require the addon file.
         package.loaded["WHATSTHEKEY"] = nil
-        -- Instead of using the require return value, get it from the global variable.
         WhatsTheKey = require("WHATSTHEKEY")
     end)
 

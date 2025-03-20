@@ -1,6 +1,9 @@
 # whats-the-key
 
-[![lua-ci](https://github.com/r3kzi/whats-the-key/actions/workflows/lua-ci.yml/badge.svg)](https://github.com/r3kzi/whats-the-key/actions/workflows/lua-ci.yml)
+[![ci](https://github.com/r3kzi/whats-the-key/actions/workflows/ci.yml/badge.svg)](https://github.com/r3kzi/whats-the-key/actions/workflows/ci.yml)
+[![Apache V2 License](https://img.shields.io/badge/license-Apache%20V2-blue.svg)](https://github.com/r3kzi/clamav-prometheus-exporter/blob/master/LICENSE)
+
+<p align="left"><img src="./Art/Logo/WhatsTheKeyLogo.png" alt="Logo" height="200"></p>
 
 A lightweight World of Warcraft addon that automatically prints your Mythic+ key level and the associated dungeon name 
 immediately after joining a group via the Looking For Group (LFG) system.
@@ -30,14 +33,14 @@ immediately after joining a group via the Looking For Group (LFG) system.
 ## Installation
 
 1. **Download the Addon:**
-    - Obtain the latest release from the project's [Releases page](#) (or clone the repository if you're contributing).
+    - Obtain the latest release from the project's [Releases page](https://github.com/r3kzi/whats-the-key/releases) (or clone the repository if you're contributing).
 
 2. **Extract & Install:**
     - Unzip the downloaded file.
     - Copy the resulting folder into your World of Warcraft `Interface/AddOns` directory.
         - **Windows:** `C:\Program Files (x86)\World of Warcraft\_retail_\Interface\AddOns`
         - **Mac:** `/Applications/World of Warcraft/_retail_/Interface/AddOns`
-    - Make sure the addon folder is not nested (i.e., it should be `Interface/AddOns/YourAddonName`, not `Interface/AddOns/YourAddonName/YourAddonName`).
+    - Make sure the addon folder is not nested (i.e., it should be `Interface/AddOns/WhatsTheKey`, not `Interface/AddOns/WhatsTheKey/WhatsTheKey`).
 
 3. **Enable the Addon:**
     - Launch World of Warcraft.

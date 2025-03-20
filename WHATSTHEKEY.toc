@@ -1,9 +1,12 @@
 ## Interface: 110100
 ## X-Min-Interface: 110100
+
 ## Title: What's the key?
-## Notes: LFG Keystone tracker
+## Notes: Prints the Mythic+ key level and dungeon name after joining a group via the Looking For Group (LFG) system.
 ## Author: Christian Niehoff
-## Version: 1.0.0
+
+## Version: 0.0.1
+
 ## IconTexture: Interface\AddOns\WhatsTheKey\Art\Logo\WhatsTheKeyLogo
 
 # External code + initialization
