@@ -5,7 +5,7 @@
 ## Notes: Prints the Mythic+ key level and dungeon name after joining a group via the Looking For Group (LFG) system.
 ## Author: Christian Niehoff
 
-## Version: 0.0.1
+## Version: 0.0.2
 
 ## IconTexture: Interface\AddOns\WhatsTheKey\Art\Logo\WhatsTheKeyLogo
 
