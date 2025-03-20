@@ -51,7 +51,10 @@ jobs:
         run: busted WHATSTHEKEY_test.lua -p _test
 
   release:
-    needs: lint
+    needs:
+      - lint
+      - test
+
     runs-on: ubuntu-latest
 
     if: ${{ startsWith(github.ref, 'refs/tags/') }}  # Only run for tag pushes
