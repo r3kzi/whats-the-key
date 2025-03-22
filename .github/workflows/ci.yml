@@ -48,7 +48,7 @@ jobs:
         run: luarocks install busted
 
       - name: Run busted
-        run: busted WHATSTHEKEY_test.lua -p _test
+        run: busted WhatsTheKey_test.lua -p _test
 
   release:
     needs:
