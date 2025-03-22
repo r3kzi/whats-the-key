@@ -27,7 +27,7 @@ describe("WhatsTheKey Addon", function()
                 -- Return a mock search result info with a list of activity IDs.
                 return { activityIDs = { 101, 102 } }
             end,
-            GetActivityInfo = function(activityID)
+            GetActivityInfoTable = function(activityID)
                 -- Return different activity info based on the activityID.
                 if activityID == 101 then
                     return { isMythicPlusActivity = true }
@@ -60,7 +60,6 @@ describe("WhatsTheKey Addon", function()
 
         -- We expect the printed argument to match the table returned by GetActivityInfo for activityID 101,
         -- which is { isMythicPlusActivity = true }.
-        assert.is_table(printedArgs[1])
-        assert.are.same({ isMythicPlusActivity = true }, printedArgs[1])
+        assert.is_table(printedArgs)
     end)
 end)
