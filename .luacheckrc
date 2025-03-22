@@ -10,7 +10,10 @@ exclude_files = {
 }
 
 ignore = {
-    "212/self"
+    "212/self",
+    "212/event",
+    "212/groupName",
+    "213/index"
 }
 
 globals = {
