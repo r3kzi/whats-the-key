@@ -1,6 +1,9 @@
 ## Interface: 110100
 ## X-Min-Interface: 110100
 
+## X-Website: https://www.curseforge.com/wow/addons/WhatsTheKey
+## X-Curse-Project-ID: 1225767
+
 ## Title: What's the key?
 ## Notes: Prints the Mythic+ key level and dungeon name after joining a group via the Looking For Group (LFG) system.
 ## Author: Christian Niehoff
