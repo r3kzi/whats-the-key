@@ -17,7 +17,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - uses: leafo/gh-actions-lua@v11
       - uses: leafo/gh-actions-luarocks@v5
@@ -39,7 +39,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - uses: leafo/gh-actions-lua@v11
       - uses: leafo/gh-actions-luarocks@v5
@@ -61,33 +61,11 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # gets entire git history, needed for automatic changelogs
 
-      - name: Create zip archive and generate sha256 checksum
-        run: |
-          mkdir -p release
-          # Archive the repository while excluding Git metadata;
-          zip -r release/WhatsTheKey.zip Art Libs embeds.xml WHATSTHEKEY.lua WHATSTHEKEY.toc  -x "*.git*"
-          sha256sum release/WhatsTheKey.zip > release/WhatsTheKey.zip.sha256
-
-      - name: Create GitHub Release
+      - name: Create Package
+        uses: BigWigsMods/packager@v2
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh release create "${{ github.ref_name }}" \
-           --title="v${{ github.ref_name }}" \
-           --repo="$GITHUB_REPOSITORY" \
-           --target=main \
-           --generate-notes
-
-      - name: Upload Zip Archive
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh release upload ${{ github.ref_name }} ./release/WhatsTheKey.zip
-
-      - name: Upload Checksum File
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh release upload ${{ github.ref_name }} ./release/WhatsTheKey.zip.sha256
+          GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
