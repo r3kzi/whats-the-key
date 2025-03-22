@@ -38,8 +38,8 @@ describe("WhatsTheKey Addon", function()
         }
 
         -- Clear any previous module cache and require the addon file.
-        package.loaded["WHATSTHEKEY"] = nil
-        WhatsTheKey = require("WHATSTHEKEY")
+        package.loaded["WhatsTheKey"] = nil
+        WhatsTheKey = require("WhatsTheKey")
     end)
 
     it("should not print anything if searchResultID is empty", function()
